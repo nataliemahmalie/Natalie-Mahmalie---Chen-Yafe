@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Final Project- Natalie Mahmalie & Chen Yafe</title>
+        <link rel="stylesheet" href="includes/style.css">
+        <script src="includes/main.js"></script>
+        <script src="includes/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <a id="logo" href="index.html">
+                    <div id="main"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="hamburger" src="images/hamburger.svg"></span></div>
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-bell"></i>
+                </a>
+                <img src="images/rami.jpg">
+                <section id="userName">rami</section>
+            </header>
+            <nav>
+                <ul>
+                    <li><a  href="index.html">דף הבית <i class="fa fa-home"></i></a></li>
+                    <li><a href="#"> הגדרות משתמש <i class="fa fa-cog"></i></a></li>
+                    <li><a href="paymantGrafh.html"> התחשבנות בין שותפים<i class="fa fa-bar-chart"></i></a></li>
+                    <li><a href="bills.html">תשלום חשבונות <i class="fa fa-credit-card"></i></a></li>
+                    <li><a href="groupManagement.html">ניהול קבוצות <i class="fa fa-user-plus"></i></a></li>
+                </ul>
+            </nav>
+            <div id="mySideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<img id="hamburger" src="images/hamburger.svg">
+                    <section>
+                        <img src="images/daniel.png">
+                        <h6>daniel<h6>
+                    </section>
+                </a>
+                <a href="index.html"><i id="next" class="fa fa-angle-left"></i>דף הבית &nbsp; <i class="fa fa-home"></i></a>
+                <a href="#"><i id="next" class="fa fa-angle-left"></i> הגדרות משתמש &nbsp; <i class="fa fa-cog"></i></a>
+                <a href="paymantGrafh.html"><i id="next" class="fa fa-angle-left"></i>התחשבנות בין שותפים &nbsp; <i class="fa fa-bar-chart"></i></a>
+                <a href="bills.html"><i id="next" class="fa fa-angle-left"></i>תשלום חשבונות &nbsp; <i class="fa fa-credit-card"></i></a>
+                <a href="groupManagement.html"><i id="next" class="fa fa-angle-left"></i>ניהול קבוצות &nbsp; <i class="fa fa-user-plus"></i></a>
+            </div>
+            <main>
+                <form  action="" method="get">
+                    <h2>השארת הודעה</h2>
+                        <input required title="you forgot to fill it" type="text" name="names" placeholder="?עבור מי ההודעה">
+                        <textarea id="message" type="text" name="messege" placeholder="תוכן ההודעה"></textarea>
+                        <input type="number" name="amount" placeholder="סכום ששולם">
+                        <input type="date" name="date" placeholder="תאריך ביצוע התשלום">
+                        <label>:אופן ההתחשבנות
+                            <select name="pay" placeholder="אופן ההתחשבנות">
+                            <option name="pay">מזומן</option>
+                            <option name="pay">העברת כסף BIT</option>
+                            <option name="pay">העברת כסף PEEPER PAY</option>
+                        </select> 
+                        </label>
+                        <button>Send Message</button>  
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
